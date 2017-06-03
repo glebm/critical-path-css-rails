@@ -10,8 +10,6 @@ Gem::Specification.new do |s|
   s.description = 'Only load the CSS you need for the initial viewport in Rails!'
   s.license     = 'MIT'
 
-  s.add_runtime_dependency 'phantomjs', ['~> 2.1']
-
   s.files        = `git ls-files`.split("\n")
   s.executables  = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_path = 'lib'
